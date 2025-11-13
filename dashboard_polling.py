@@ -143,7 +143,7 @@ elif page == "Hasil Polling":
 
         with placeholder.container():
             st.altair_chart(chart, use_container_width=True)
-            st.dataframe(df.set_index("Pilihan"))
+            # st.dataframe(df.set_index("Pilihan"))
             # st.caption("⏳ Halaman diperbarui otomatis setiap 3 detik...")
 
         time.sleep(5)
