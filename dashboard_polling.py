@@ -57,7 +57,7 @@ st.markdown("""
 st.image("Flayer TV & X Benner No Cetak (50 x 100 cm).png", use_container_width=True)
 st.markdown("""
     <h1 style='text-align:center; color:#004aad;'>
-        🧭 BINA TALENTA INDONESIA - STEM & KARAKTER
+        BINA TALENTA INDONESIA - STEM & KARAKTER
     </h1>
     <h3 style='text-align:center; color:#f39c12;'>
         "Asah Potensi Raih Prestasi"
