@@ -3,6 +3,7 @@ import time
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
+import altair as alt
 
 
 SHEET_ID = "1bGTtpeN0M4Yewb8qXOhL8Z1BYQ3r0GTYspBi3kpCnRo"
