@@ -91,25 +91,25 @@ if page == "Halaman Polling":
     # --- Tombol kirim suara ---
     if st.button("✅ Kirim Suara"):
         if not nama or not prodi:
-            # st.warning("⚠️ Harap isi *Nama* dan *Asal Prodi* terlebih dahulu sebelum mengirim suara.")
-            nama = ""
-            prodi = ""
+            st.warning("⚠️ Harap isi *Nama* dan *Asal Prodi* terlebih dahulu sebelum mengirim suara.")
+            # nama = ""
+            # prodi = ""
 
-        
-        update = sheet1.append_row([nama, prodi, pilihan])
-
-        if update:
-            st.success(f"Terima kasih, **{nama}** dari **{prodi}**! Anda memilih **{pilihan}** 🙌")
-
-        # (Opsional) tampilkan ringkasan
-        st.markdown(f"""
-            <div class="info-box">
-            <b>Rekap suara kamu:</b><br>
-            Nama: {nama}<br>
-            Prodi: {prodi}<br>
-            Pilihan: {pilihan}
-            </div>
-        """, unsafe_allow_html=True)
+        else :
+            update = sheet1.append_row([nama, prodi, pilihan])
+    
+            if update:
+                st.success(f"Terima kasih, **{nama}** dari **{prodi}**! Anda memilih **{pilihan}** 🙌")
+    
+            # (Opsional) tampilkan ringkasan
+            st.markdown(f"""
+                <div class="info-box">
+                <b>Rekap suara kamu:</b><br>
+                Nama: {nama}<br>
+                Prodi: {prodi}<br>
+                Pilihan: {pilihan}
+                </div>
+            """, unsafe_allow_html=True)
 
     # st.markdown('<div class="info-box">Setelah memilih, buka halaman <b>Hasil Polling</b> untuk melihat hasil realtime.</div>', unsafe_allow_html=True)
     
