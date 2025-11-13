@@ -8,8 +8,6 @@ from google.oauth2.service_account import Credentials
 import requests
 import gspread
 
-DATA_FILE = "data.json"
-
 SHEET_ID = "1bGTtpeN0M4Yewb8qXOhL8Z1BYQ3r0GTYspBi3kpCnRo"
 CREDENTIALS_FILE = "credentials.json"
 
