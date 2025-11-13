@@ -9,12 +9,10 @@ import requests
 import gspread
 
 SHEET_ID = "1bGTtpeN0M4Yewb8qXOhL8Z1BYQ3r0GTYspBi3kpCnRo"
-CREDENTIALS_FILE = "credentials.json"
 
 @st.cache_resource
 def get_sheet():
-    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    creds = Credentials.from_service_account_file(CREDENTIALS_FILE, scopes=scopes)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(st.secrets.connections)
     client = gspread.authorize(creds)
     return client.open_by_key(SHEET_ID)
 
