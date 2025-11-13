@@ -83,7 +83,7 @@ if page == "Halaman Polling":
 
     # --- Input identitas ---
     nama = st.text_input("👤 Nama")
-    prodi = st.text_input("🏫 Asal Prodi")
+    prodi = st.text_input("🏫 Asal Prodi / Institusi")
 
     # --- Pilihan polling ---
     pilihan = st.radio("Pilih Opsi:", data, horizontal=False)
