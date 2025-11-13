@@ -86,7 +86,7 @@ if page == "Halaman Polling":
     prodi = st.text_input("🏫 Asal Prodi / Institusi")
 
     # --- Pilihan polling ---
-    pilihan = st.radio("Pilih Opsi:", data, horizontal=False)
+    pilihan = st.radio("Pilih Ensiklopedia STEM terbaik:", data, horizontal=False)
 
     # --- Tombol kirim suara ---
     if st.button("✅ Kirim Suara"):
