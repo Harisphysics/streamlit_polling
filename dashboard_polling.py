@@ -1,12 +1,9 @@
 import streamlit as st
-import json
-import os
 import time
 import pandas as pd
-import altair as alt
-from google.oauth2.service_account import Credentials
-import requests
+from oauth2client.service_account import ServiceAccountCredentials
 import gspread
+
 
 SHEET_ID = "1bGTtpeN0M4Yewb8qXOhL8Z1BYQ3r0GTYspBi3kpCnRo"
 
