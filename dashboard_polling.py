@@ -73,7 +73,7 @@ page = st.sidebar.radio("Pilih Halaman:", ["Halaman Polling", "Hasil Polling"])
 # 🗳️ Halaman Polling
 # -----------------------------
 if page == "Halaman Polling":
-    st.title("🗳️ Sistem Polling Peserta")
+    st.title("🗳️ Sistem Polling Peserta Ensiklopedia STEM IGNITE 2025")
     st.markdown('<div class="info-box">Silakan isi data diri dan pilih salah satu opsi di bawah ini:</div>', unsafe_allow_html=True)
 
     sheet1 = get_sheet().get_worksheet(0)
