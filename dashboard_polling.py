@@ -120,6 +120,17 @@ elif page == "Hasil Polling":
     st.title("📊 Hasil Polling Realtime")
 
     # st.markdown('<div class="info-box">Grafik diperbarui otomatis setiap 3 detik.</div>', unsafe_allow_html=True)
+    st.markdown("### 🔐 Masukkan Password untuk melihat hasil polling")
+    password = st.text_input("Password:", type="password")
+
+    # Ganti nilai ini dengan password admin Anda
+    CORRECT_PASSWORD = "admin123"
+
+    if password != CORRECT_PASSWORD:
+        st.warning("Masukkan password yang benar.")
+        st.stop()  # menghentikan eksekusi halaman agar grafik tidak muncul
+
+    st.success("Password benar! Menampilkan hasil polling...")
 
     placeholder = st.empty()
 
