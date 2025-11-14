@@ -89,7 +89,7 @@ if page == "Halaman Polling":
     pilihan = st.radio("Pilih Ensiklopedia STEM terbaik:", data, horizontal=False)
 
     # --- Tombol kirim suara ---
-    if st.button("✅ Kirim Suara"):
+    if st.button("✅ Kirim Suara", disabled=True):
         if not nama or not prodi:
             st.warning("⚠️ Harap isi *Nama* dan *Asal Prodi* terlebih dahulu sebelum mengirim suara.")
             # nama = ""
