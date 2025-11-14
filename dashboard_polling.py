@@ -146,4 +146,4 @@ elif page == "Hasil Polling":
             # st.dataframe(df.set_index("Pilihan"))
             # st.caption("⏳ Halaman diperbarui otomatis setiap 3 detik...")
 
-        time.sleep(5)
+        time.sleep(30)
